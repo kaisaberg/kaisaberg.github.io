@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonnier / Di.se — Kaisa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@600&family=Inter:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=12">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="case-nav">
+    <a class="nav-link" href="../index.html#work">Work</a>
+    <a class="nav-logo-wrap" href="../index.html" aria-label="Home">
+      <img src="../Images/index images/Logo.svg" alt="K logo">
+    </a>
+    <a class="nav-link" href="../index.html#about">About</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="case-hero">
+    <div class="case-hero-inner">
+      <div class="case-hero-text">
+        <p class="case-label">Case Study</p>
+        <h1 class="case-title">Designing a quarterly reports video pipeline for Sweden's biggest business publication</h1>
+        <p class="case-subtitle">A live streaming tool for public companies, and the display components that bring their broadcasts to Di.se's readers.</p>
+      </div>
+      <div class="case-hero-img-wrap">
+        <img class="case-hero-img" src="../Images/Bonnier images/Di_Investorrelations_thumb2.webp" alt="Bonnier Di.se quarterly reports pipeline">
+      </div>
+    </div>
+  </section>
+
+  <!-- METADATA BAR -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <div class="meta-block">
+        <p class="meta-label">My Role</p>
+        <p class="meta-value">Product strategy, Competitive research, UX design</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Team</p>
+        <p class="meta-value">1 PM, 3 developers, 1 UX designer (me) + client team</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Timeline</p>
+        <p class="meta-value">April 2025 – April 2026</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Output</p>
+        <p class="meta-value">A pipeline for live-broadcasting quarterly reports, built across four products plus three components integrated into Di.se</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB NAV -->
+  <nav class="tab-nav">
+    <div class="tab-group">
+      <a href="#at-a-glance">At a glance</a>
+      <a href="#context">Context</a>
+      <a href="#the-problem">The problem</a>
+      <a href="#decisions">Decisions</a>
+      <a href="#solution">Shipped solution</a>
+      <a href="#outcomes">What happened</a>
+      <a href="#learnings">Learnings</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="case-main">
+
+    <!-- AT A GLANCE -->
+    <section class="case-section" id="at-a-glance">
+      <div class="callout-box">
+        <p class="callout-label">At a Glance</p>
+        <div class="callout-text">
+          <p>My company is a video platform for on-demand and live streaming. Over one year, we partnered with Bonnier to give Di.se, Sweden's biggest business publication, a quarterly report video product it didn't have. I designed four products (video meeting software for producers, an embedded player for viewers, a form and email system, and embeddable video channels for company investor pages) plus three components integrated into di.se.</p>
+          <p>Since launch, roughly fifteen listed companies have joined, thirty-five videos are live, and companies using the pipeline report visibility gains of up to 700 percent over previous solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTEXT -->
+    <section class="case-section" id="context">
+      <hr class="section-divider">
+      <h2 class="case-h2">Context</h2>
+      <div class="case-body">
+        <p>Bonnier owns Di.se, the leading business and financial newspaper in Sweden. Quarterly report coverage there had always lived as numbers, graphs, and links to PDFs. Readers who wanted more context assembled it themselves from press releases and analyst notes.</p>
+        <p>A Finnish competitor had already built the product Di.se didn't have: video interviews with CEOs and CFOs at earnings time, watchable presentations instead of downloadable ones. Their format was setting the standard across the Nordics, and Di.se had no answer to it.</p>
+      </div>
+      <div class="case-image-block">
+        <img class="case-img" src="../Images/Bonnier images/di-tidning.webp" alt="Di.se newspaper">
+      </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="case-section" id="the-problem">
+      <hr class="section-divider">
+      <h2 class="case-h2">The problem</h2>
+      <div class="case-body">
+        <p>The pitch we brought to Bonnier was direct. Sweden's biggest business paper was missing its opportunity to be the leading publisher of quarterly report videos, and the space was being taken by a Finnish competitor while di.se stayed with static formats. We offered to help them close the gap.</p>
+        <p>Bonnier said yes. That meant we had to build several things at once.</p>
+        <p>Public companies needed a way to actually broadcast a professional quarterly report. This meant supporting several roles live: the CEO and CFO speaking, the operator running the stream, invited experts and shareholders asking questions, phone-in callers, and thousands of viewers watching from di.se's audience.</p>
+        <p>Participating companies also needed a way to publish these videos on their own investor pages. My company had a product for building customer video channels, but it hadn't been designed for a pipeline like this.</p>
+        <p>We also had to build the infrastructure for sign-ups and confirmation emails. Two different flows for the two audiences (viewers and participants), all customizable per company. That infrastructure didn't exist.</p>
+        <p>And we had to design the di.se side of the pipeline: where the streams appear live, where they live afterward, how readers find them, and how they integrate with di.se's existing coverage. All of it had to look native to di.se.</p>
+        <p>The deadline was April 2026, one year from the first meeting.</p>
+      </div>
+      <div class="callout-box" style="margin-top: 48px;">
+        <p class="callout-label">What We Had to Work Around</p>
+        <ul class="bullet-list">
+          <li><span>Bonnier's UX and dev teams didn't join until nine months into the project</span></li>
+          <li><span>No access to di.se's design system</span></li>
+          <li><span>A one-year deadline with no room for slippage</span></li>
+          <li><span>No existing infrastructure on our side for webcam streams, sign-ups, forms, or emails</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DECISIONS -->
+    <section class="case-section" id="decisions">
+      <hr class="section-divider">
+      <h2 class="case-h2">Decisions</h2>
+      <div class="case-body decisions-intro">
+        <p>Unlike most partnerships, this one didn't start with a client brief. Bonnier wasn't a customer. We identified the gap ourselves, studied what the Finnish competitor had built, and pitched Bonnier on closing it. When they said yes, we had committed to a year of design, engineering, and integration work with a partner we'd never worked with before, on a product that didn't yet exist.</p>
+      </div>
+
+      <div class="decision-blocks">
+
+        <div class="decision-block">
+          <p class="decision-num">Decision 01</p>
+          <h3 class="decision-title">Five roles, five access points</h3>
+          <div>
+            <p class="decision-q-label">The Question</p>
+            <p class="decision-text">How do we spread the work of running a live broadcast across the right people, so speakers can focus on speaking and guests can join without breaking anything?</p>
+          </div>
+          <div>
+            <p class="decision-a-label">What We Chose and Why</p>
+            <div class="decision-text">
+              <p>Other meeting platforms like Teams and Zoom treat every participant as roughly the same kind of user. A professional quarterly report broadcast doesn't work that way. We designed the software around <strong>five distinct roles</strong>, each with different capabilities and different entry paths.</p>
+              <p><strong>Operators</strong> run the broadcast. They manage the stream, upload the presentation, invite participants, control who speaks and when, change slides, moderate chat, and set metadata.</p>
+              <p><strong>Speakers</strong> are the CEO, CFO, and other primary voices. They present and answer questions.</p>
+              <p><strong>Participants</strong> are invited experts and selected shareholders who ask questions live.</p>
+              <p><strong>Callers</strong> have the same purpose as participants, but join by phone rather than by browser. This required building phone integration into a browser-based streaming tool.</p>
+              <p><strong>Viewers</strong> watch through the embedded player on di.se. They can chat with each other but never touch the meeting software.</p>
+              <p>Each role has its own sign-up flow, email sendout, and permissions. The design work was making sure five people in five different interfaces converge on one broadcast.</p>
+            </div>
+          </div>
+          <div class="decision-img-wrap">
+            <img class="decision-img" src="../Images/Bonnier images/Roles.webp" alt="Participants list in the live management tool">
+            <p class="case-caption">Participants list in the live management tool.</p>
+          </div>
+        </div>
+
+        <div class="decision-block">
+          <p class="decision-num">Decision 02</p>
+          <h3 class="decision-title">Designing the pipeline as a single flow across four products</h3>
+          <div>
+            <p class="decision-q-label">The Question</p>
+            <p class="decision-text">How do we design new products that combine with our existing platform to form one coherent flow?</p>
+          </div>
+          <div>
+            <p class="decision-a-label">What We Chose and Why</p>
+            <div class="decision-text">
+              <p>My company already had an embeddable video player and a product for building customer video channels. The possibility to view slides in the video player, a video meeting software and the form and email system had to be built new. All four products had to work together as one pipeline for our customers.</p>
+              <p>The design work was mostly in the seams. Where the meeting software's stream flows into the player. Where the form's sign-up grants access to the player or an invitation to the meeting software. Where the player embeds into either di.se or the video channels. Each product needed a clean interface to the next, so that from the user's point of view this was one flow, not four separate tools.</p>
+            </div>
+          </div>
+          <div class="decision-img-wrap">
+            <img class="decision-img" src="../Images/Bonnier images/All different flows.webp" alt="Assets from both platforms merge to create one singular experience">
+            <p class="case-caption">Assets from both platforms merge to create one singular experience.</p>
+          </div>
+        </div>
+
+        <div class="decision-block">
+          <p class="decision-num">Decision 03</p>
+          <h3 class="decision-title">A different way in for each role</h3>
+          <div>
+            <p class="decision-q-label">The Question</p>
+            <p class="decision-text">How do we invite different types of viewers/participants into the same broadcast?</p>
+          </div>
+          <div>
+            <p class="decision-a-label">What We Chose and Why</p>
+            <div class="decision-text">
+              <p>Each of the five roles has different context, so each gets a different invitation.</p>
+              <p><strong>Speakers</strong> (CEOs, CFOs, primary voices) are added by the operator in the admin section of the meeting software and receive a direct link to the meeting.</p>
+              <p><strong>Participants</strong> receive a form from the operator by email. They fill it out and receive their invitation.</p>
+              <p><strong>Callers</strong> use the same form as participants, but their invitation email includes a phone number to dial at broadcast time. From the software's point of view, a caller is a participant who joins by phone.</p>
+              <p><strong>Viewers</strong> sign up through the form shown alongside the video wherever it's embedded (on di.se, on a company's investor page, or elsewhere). Their sign-up grants access to the player.</p>
+              <p>Four invitation mechanisms, but on the operator's side, everyone shows up in the same participant list, tagged by role. That's what keeps the broadcast manageable.</p>
+            </div>
+          </div>
+          <div class="decision-img-wrap">
+            <img class="decision-img" src="../Images/Bonnier images/Forms.webp" alt="Invitation form that triggers an email invite">
+            <p class="case-caption">Invitation form that triggers an email invite.</p>
+          </div>
+        </div>
+
+        <div class="decision-block">
+          <p class="decision-num">Decision 04</p>
+          <h3 class="decision-title">Two brands, one pipeline</h3>
+          <div>
+            <p class="decision-q-label">The Question</p>
+            <p class="decision-text">How do I design a pipeline where some products should look like my company's platform, while others should look like the client's?</p>
+          </div>
+          <div>
+            <p class="decision-a-label">What We Chose and Why</p>
+            <div class="decision-text">
+              <p>Different parts of the pipeline needed to feel like different brands.</p>
+              <p>The products used by producers and operators (the video meeting software, the form builder, the admin tools) live on my company's platform, so they needed to look like our platform.</p>
+              <p>The products seen by Di.se readers and the participating companies' audiences (the embedded player, the embeddable video channels, the three Di.se widgets) needed to look like Di.se. A reader should never notice that my company's tools are powering the video experience.</p>
+              <p>The embeddable video channels sat in the middle. They needed to feel like Di.se's aesthetic and also accept each customer's own brand: logo, accent colors, and small stylistic touches. I redesigned that product in two layers. The structural layer (grid, hierarchy, video component shapes, information density) locked to the Di.se aesthetic. The visual layer stayed customizable.</p>
+              <p>On the Di.se side, there was an added constraint. Bonnier's UX team didn't join until nine months into a twelve-month project. Until then, I worked from what I could see on the live site: typefaces, spacing, colors, patterns. I studied it and rebuilt it component by component in my own files. When the Bonnier team joined, they translated my designs into their own system. The finished components match my designs at about 95 percent.</p>
+            </div>
+          </div>
+          <div class="decision-img-wrap">
+            <img class="decision-img" src="../Images/Bonnier images/DI.se vs Qbrick Meet.webp" alt="Two platforms needing separate visual languages">
+            <p class="case-caption">Two platforms needing separate visual languages.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="case-section" id="solution">
+      <hr class="section-divider">
+      <h2 class="case-h2">The shipped solution</h2>
+      <div class="case-body">
+        <p>The pipeline launched in April 2026 and now runs across five connected surfaces.</p>
+        <p><strong>Video meeting software</strong> (built for this project). Producers use it to run the live broadcast. Operators upload the presentation, invite speakers by web link, invite callers by phone, control slides, moderate chat, and set metadata.</p>
+        <p><strong>Embedded video player</strong> (existing product with added features). The stream flows out of the meeting software and into the player, which appears on Di.se, on customer investor pages, and anywhere else a customer chooses to display it. Presentation slides are viewable during and after a live stream within the video player.</p>
+        <p><strong>Form and email system</strong> (built for this project). Any live stream can have a form attached. Viewer sign-ups grant access to the player. Participant sign-ups grant entry to the meeting software. Each triggers a customizable confirmation email.</p>
+        <p><strong>Embeddable video channels</strong> (existing product, redesigned). Participating companies display their quarterly report videos on their own investor pages, styled to match the wider pipeline but flexible enough to hold each customer's brand.</p>
+        <p><strong>Three components on Di.se</strong>. A front-page widget labeled Kvartalspresentationer showing the latest videos. A dedicated Kvartalspresentationer page for browsing every video across every participating company. A per-company video component on each brand page, showing that company's most recent video alongside its financial data.</p>
+        <p>From the user's point of view, this is one product: a company holds a broadcast, and it appears where its audience is already looking. Behind the surfaces, five products do coordinated work.</p>
+      </div>
+      <div class="solution-imgs">
+        <img class="solution-img" src="../Images/Bonnier images/Di_results1.webp" alt="Bonnier Di.se shipped solution">
+        <img class="solution-img" src="../Images/Bonnier images/Di_results_2.webp" alt="Bonnier Di.se shipped solution">
+        <img class="solution-img" src="../Images/Bonnier images/Di_results3.webp" alt="Bonnier Di.se shipped solution">
+      </div>
+    </section>
+
+    <!-- OUTCOMES -->
+    <section class="case-section" id="outcomes">
+      <hr class="section-divider">
+      <h2 class="case-h2">What happened after we shipped</h2>
+      <div class="case-body">
+        <p><strong>Adoption.</strong> Roughly fifteen listed companies have implemented the service since launch. Thirty-five videos are live on Di.se, and the archive grows each earnings season.</p>
+        <p><strong>Visibility gains.</strong> Companies using the pipeline report visibility increases of up to 700 percent over their previous solutions. Combining a video format with Di.se's reach is doing what the pitch predicted.</p>
+        <p><strong>Interest from beyond Sweden.</strong> Nordic companies outside Sweden have started asking about the service, with several listed on the Helsinki exchange particularly interested. The pipeline was built for the Nordic market, and the early demand confirms that scope.</p>
+        <p><strong>The meeting software beyond this project.</strong> It was built for Bonnier, but designed to serve other use cases. It now runs my company's client webinars and other broadcast scenarios.</p>
+      </div>
+    </section>
+
+    <!-- LEARNINGS -->
+    <section class="case-section" id="learnings">
+      <hr class="section-divider">
+      <h2 class="case-h2">Learnings</h2>
+      <div class="case-body">
+        <p><strong>Cross-team projects have to be cross-team from the start.</strong> The biggest source of pressure on this project was that Bonnier's team joined nine months in, with three or four months left to launch. Late ideas and problems surfaced right when we had the least time to absorb them. For a partnership like this in the future, I would insist on both teams being in the room from the first design meeting.</p>
+        <p><strong>People who don't work with video don't intuit video.</strong> Bonnier's UX team is excellent, but they hadn't spent a career staring at 16:9 rectangles. Basic constraints (fixed aspect ratios, black bars, how a video reacts when its container changes shape) had to be explained and re-explained. Your own expertise should never be assumed to be common knowledge.</p>
+        <p><strong>Live QA is not QA.</strong> Because of the deadline, we tested the pipeline on live broadcasts, in front of real audiences. The first few streams were hectic and required everyone at my company to pitch in as operators. It got us across the finish line, but future projects need real staging and dry-run broadcasts before the first live one.</p>
+        <p><strong>Designing across a whole pipeline is more interesting than designing one screen.</strong> Getting to design both the tool that produces the video and every surface that displays the video, in service of one integrated outcome, teaches you to think about product surfaces as connected rather than isolated.</p>
+        <p><strong>A tight deadline means deferring things you'd rather not.</strong> Setting up a broadcast means moving through several separate products in a specific order: creating the live media, adding metadata, inviting speakers, creating forms. It's a manual sequence, and in v1 it lives across those separate products rather than in one flow. We accepted that friction because my company was operating every broadcast ourselves in the early days. Version 2 will collapse those steps into a single creation wizard so customers can eventually run their own broadcasts.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CASE FOOTER -->
+  <footer class="case-footer">
+    <div class="case-footer-inner">
+      <p class="case-footer-label">Next Case</p>
+      <h2 class="case-footer-title">Designing Quick Edit: a simple, embeddable video editor</h2>
+      <div class="case-footer-buttons">
+        <a class="btn btn-outline" href="../index.html">Back to main page</a>
+        <a class="btn" href="quick-edit.html">Read the next case</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
