@@ -1085,20 +1085,36 @@ a {
 
   /* --- HERO (index) --- */
 
-  /* Switch hero height back to a sensible fixed floor on small screens */
+  /* Hero taller on mobile to give hands room above and below */
   .hero {
-    min-height: 520px;
+    min-height: 640px;
   }
 
-  /* Hide hands and talk bubble — too small to read, distracts from content */
-  .hand-left-wrap,
-  .hand-right-wrap,
+  /* Hide talk bubble only */
   .talk-bubble {
     display: none;
   }
 
+  /* Left hand: smaller, anchored top-left — sits above the text */
+  .hand-left-wrap {
+    width: 54%;
+    left: -6%;
+    top: 52px;
+    animation: none;
+  }
+
+  /* Right hand: smaller, anchored bottom-right — sits below the text */
+  .hand-right-wrap {
+    width: 60%;
+    right: -6%;
+    top: auto;
+    bottom: 56px; /* above the tags bar */
+    animation: none;
+  }
+
+  /* Push hero text into the space between the two hands */
   .hero-content {
-    padding: 80px 20px 60px;
+    padding: 200px 20px 200px;
     max-width: 100%;
   }
 
