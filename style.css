@@ -1085,9 +1085,9 @@ a {
 
   /* --- HERO (index) --- */
 
-  /* Hero taller on mobile to give hands room above and below */
+  /* Hero height on mobile */
   .hero {
-    min-height: 640px;
+    min-height: 560px;
   }
 
   /* Hide talk bubble only */
@@ -1114,7 +1114,7 @@ a {
 
   /* Push hero text into the space between the two hands */
   .hero-content {
-    padding: 200px 20px 200px;
+    padding: 190px 20px 120px;
     max-width: 100%;
   }
 
