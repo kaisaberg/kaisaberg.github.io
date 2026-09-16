@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="k_favicon.png">
-  <link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 
@@ -76,6 +76,19 @@
       </div>
 
       <div class="work-grid">
+
+        <a class="project-card" href="work/kaiswise.html">
+          <div class="project-thumb">
+            <img src="Images/Kaiswise images/kaiswise_hero_image.webp" alt="Kaiswise cost-splitting app">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-date">2026</span>
+              <span class="project-title">&#8220;Kaiswise&#8221; &#8212; a cost-splitting app for two</span>
+            </div>
+            <span class="project-tags">#Figma, #Claude, #UI, #UX</span>
+          </div>
+        </a>
 
         <a class="project-card" href="work/bonnier.html">
           <div class="project-thumb">
@@ -261,5 +274,12 @@
 
   </footer>
 
+
+<script>
+  window.addEventListener('load', function () {
+    var outer = document.querySelector('.hero-outer');
+    if (outer) outer.classList.add('hands-ready');
+  });
+</script>
 </body>
 </html>

@@ -130,6 +130,10 @@ a {
   pointer-events: none;
   user-select: none;
   z-index: 5;
+  opacity: 0;
+}
+
+.hands-ready .hand-left-wrap {
   animation: hand-left-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -147,6 +151,10 @@ a {
   pointer-events: none;
   user-select: none;
   z-index: 5;
+  opacity: 0;
+}
+
+.hands-ready .hand-right-wrap {
   animation: hand-right-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
 }
 

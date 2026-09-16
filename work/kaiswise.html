@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaiswise — Kaisa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@600&family=Inter:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+  <meta name="description" content="Product designer specialising in UX, design systems and creative solutions. I design the foundations that make good products possible.">
+  <meta property="og:title" content=""Kaiswise" — a cost-splitting app for two — Kaisa Berg">
+  <meta property="og:description" content="Product designer specialising in UX, design systems and creative solutions. I design the foundations that make good products possible.">
+  <meta property="og:image" content="https://kaisaberg.github.io/og-image.png">
+  <meta property="og:url" content="https://kaisaberg.github.io/work/kaiswise.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="../k_favicon.png">
+  <link rel="stylesheet" href="../style.css?v=13">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="case-nav">
+    <a class="nav-link" href="../index.html#work">Work</a>
+    <a class="nav-logo-wrap" href="../index.html" aria-label="Home">
+      <img src="../Images/index images/Logo.svg" alt="K logo">
+    </a>
+    <a class="nav-link" href="../index.html#about">About</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="case-hero">
+    <div class="case-hero-inner">
+      <div class="case-hero-text">
+        <p class="case-label">Case Study</p>
+        <h1 class="case-title">&#8220;Kaiswise&#8221; &#8212; a cost-splitting app for two</h1>
+        <p class="case-subtitle">A tiny cost-splitting app for two people, prototyped with Claude and redesigned until it felt like ours.</p>
+      </div>
+      <div class="case-hero-img-wrap">
+        <img class="case-hero-img" src="../Images/Kaiswise images/kaiswise_hero_image.webp" alt="Kaiswise cost-splitting app">
+      </div>
+    </div>
+  </section>
+
+  <!-- METADATA BAR -->
+  <div class="meta-bar">
+    <div class="meta-bar-inner">
+      <div class="meta-block">
+        <p class="meta-label">My Role</p>
+        <p class="meta-value">UX design</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Team</p>
+        <p class="meta-value">1 Claude developer (Fredrik), 1 UX designer (me)</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Timeline</p>
+        <p class="meta-value">Aug 2026 – Sep 2026</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Output</p>
+        <p class="meta-value">A cost splitting app for a singular couple (+extra addons for fun).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB NAV -->
+  <nav class="tab-nav">
+    <div class="tab-group">
+      <a href="#where-it-started">Where it started</a>
+      <a href="#scoping-it-out">Scoping it out</a>
+      <a href="#work-in-progress">Work in progress</a>
+      <a href="#finished-product">Finished product</a>
+      <a href="#closing-thoughts">Closing thoughts</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="case-main">
+
+    <!-- WHERE IT STARTED -->
+    <section class="case-section" id="where-it-started">
+      <h2 class="case-h2">Where it started</h2>
+      <div class="case-body">
+        <p>For years, my fianc&#233; (Fredrik) and I split our shared costs using an app called Steven. It was simple, focused, and did exactly what a couple needs: quick expense entry, clear balance, and no fuss. Then, a couple of years ago, it quietly stopped working. Development stalled, syncing became unreliable, and eventually we couldn&#8217;t trust it to hold our numbers anymore.</p>
+        <p>We switched to Splitwise out of necessity. It works for what it is, but it isn&#8217;t built for a couple who share almost everything, all the time. It&#8217;s designed around groups and events &#8211; a ski trip, a shared house, a one-off dinner. When your &#8220;group&#8221; is your household and your &#8220;event&#8221; is every single day, the whole interaction starts to grate. Adding an expense takes more taps than it should. The free tier caps how many entries you can log per day, which feels absurd for people trying to keep track of daily groceries. And there&#8217;s nothing personal about it &#8211; it&#8217;s a utility, and it feels like one.</p>
+        <p>After a few months of frustration, Fredrik said &#8220;we should just build this ourselves.&#8221; And since Claude had gotten good enough to write functional apps end-to-end, the barrier to &#8220;just building it&#8221; was suddenly a weekend of work instead of a project we&#8217;d never finish.</p>
+        <p>So we did.</p>
+      </div>
+    </section>
+
+    <!-- SCOPING IT OUT -->
+    <section class="case-section" id="scoping-it-out">
+      <hr class="section-divider">
+      <h2 class="case-h2">Scoping it out</h2>
+      <div class="case-body">
+        <p>Before Fredrik started building, we sat down at the kitchen table and wrote out what we actually needed the app to do. Nothing fancy, just what would solve our specific frustration with the other apps we&#8217;d tried.</p>
+      </div>
+
+      <div class="callout-box" style="margin-top: 32px;">
+        <p class="callout-label">What made the list</p>
+        <ul class="bullet-list">
+          <li><span>Add an expense (amount, description, when it happened, whether it was split 50/50 or custom)</span></li>
+          <li><span>See at a glance what one of us owes the other</span></li>
+          <li><span>Settle the debt when we&#8217;re even</span></li>
+          <li><span>View past expenses and know which are settled and which aren&#8217;t</span></li>
+          <li><span>Simple statistics for how much we&#8217;ve spent together per week, month, or all-time</span></li>
+        </ul>
+      </div>
+
+      <div class="callout-box" style="margin-top: 24px;">
+        <p class="callout-label">What we deliberately left out</p>
+        <ul class="bullet-list">
+          <li><span><strong>Multiple accounts or groups.</strong> This app is for the two of us. Adding &#8220;invite others&#8221; logic would have doubled the complexity for a feature we&#8217;d never use.</span></li>
+          <li><span><strong>Direct payment integration with Swish.</strong> Real Swish API access requires a paid business account and legal agreements, which we weren&#8217;t going to set up for a personal project. Instead, &#8220;Betala nu&#8221; would show us the amount to send manually, and we&#8217;d handle the actual transfer in Swish separately.</span></li>
+        </ul>
+      </div>
+
+      <div class="case-body" style="margin-top: 32px;">
+        <p>With the scope decided, I sketched the flow so we could both agree on how the app would hang together before Fredrik went to Claude to create an advanced prototype.</p>
+        <p>Since we didn&#8217;t have an idea for the app name yet, Fredrik chose the working name &#8220;Kaiswise&#8221;.</p>
+      </div>
+
+      <div class="case-image-block">
+        <img class="case-img" src="../Images/Kaiswise images/user_flow_kaiswise.webp" alt="User flow showing the main features we wanted">
+        <p class="case-caption">User flow showing the main features we wanted.</p>
+      </div>
+    </section>
+
+    <!-- WORK IN PROGRESS -->
+    <section class="case-section" id="work-in-progress">
+      <hr class="section-divider">
+      <h2 class="case-h2">Work in progress</h2>
+
+      <div class="decision-blocks">
+
+        <!-- Prototype sub-section -->
+        <div class="decision-block">
+          <h3 class="decision-title">Prototype</h3>
+          <div>
+            <p class="decision-a-label">Claude&#8217;s version</p>
+            <div class="decision-text">
+              <p>Fredrik built the whole app with Claude in a weekend. He didn&#8217;t give it a design brief, so Claude picked its own defaults: warm neutrals, cream backgrounds, dark navy sections, terracotta accents. It&#8217;s the aesthetic you&#8217;ll recognize from a lot of Claude-built apps these days &#8211; clean and polished, but anonymous.</p>
+            </div>
+          </div>
+          <div class="case-image-block">
+            <img class="case-img" src="../Images/Kaiswise images/claudes_version.webp" alt="Advanced prototype built by Claude">
+            <p class="case-caption">Advanced prototype built by Claude.</p>
+          </div>
+          <div class="decision-text" style="margin-top: 32px;">
+            <p>We used this version for a few weeks. It worked. We logged expenses, checked balances, settled up. We even added features iteratively as we noticed what was missing &#8211; categories for our purchases, auto-suggested descriptions based on previous entries, auto-selected categories based on keywords. Every time we found something we wanted, Fredrik added it with Claude the same day.</p>
+            <p>So the prototype did exactly what a prototype is supposed to do: it validated that the feature set was right and the flow made sense, before I spent a single hour in Figma.</p>
+            <p>But every time I opened the app, it felt like using someone else&#8217;s tool. It looked like every other Claude-generated app I&#8217;d ever seen. It didn&#8217;t look like ours.</p>
+          </div>
+        </div>
+
+        <!-- Making it ours sub-section -->
+        <div class="decision-block">
+          <h3 class="decision-title">Making it ours</h3>
+          <div>
+            <p class="decision-a-label">Building the foundation for a re-design</p>
+          </div>
+
+          <div class="decision-text">
+            <p>A refined color palette. I moved from Claude&#8217;s defaults to a warmer, more saturated set of tones with a specific personality: deep teal-navy, terracotta, warm sand, muted rose, mustard yellow. Not radically different from what Claude picked, but chosen with intent.</p>
+          </div>
+          <div class="case-image-block">
+            <img class="case-img" src="../Images/Kaiswise images/color_scales.webp" alt="Color scales">
+            <p class="case-caption">Color scales.</p>
+          </div>
+
+          <div class="decision-text" style="margin-top: 40px;">
+            <p>A new typography scale. I introduced Zilla Slab for display type &#8211; a warm, editorial serif that gives the app a bit of magazine energy instead of pure SaaS. Body copy stayed in Inter for legibility. The pairing gives every screen personality that Inter alone couldn&#8217;t.</p>
+          </div>
+          <div class="case-image-block">
+            <img class="case-img" src="../Images/Kaiswise images/typography_scale.webp" alt="Typography scale">
+            <p class="case-caption">Typography scale.</p>
+          </div>
+
+          <div class="decision-text" style="margin-top: 40px;">
+            <p>Custom illustrations of us. To have a bit of fun, I drew illustrated versions of Fredrik and me, heavily inspired by Sp&#246;ket Laban. And here&#8217;s the fun bit: the illustration on the balance card changes based on who owes money. When I owe him, I&#8217;m mad. When he owes me, he&#8217;s sad. Small detail, but it makes the whole app feel like a joke between us instead of a utility.</p>
+          </div>
+          <div class="case-image-block">
+            <img class="case-img" src="../Images/Kaiswise images/custom_illustrations.webp" alt="Custom illustrations">
+            <p class="case-caption">Custom illustrations.</p>
+          </div>
+
+          <div class="decision-text" style="margin-top: 40px;">
+            <p>A new icon library. I swapped Claude&#8217;s defaults for a consistent set. The icon set is available as a community asset in Figma, and it&#8217;s called &#8220;Coolicons&#8221;.</p>
+          </div>
+          <div class="case-image-block">
+            <img class="case-img" src="../Images/Kaiswise images/icon_library.webp" alt="Icon set">
+            <p class="case-caption">Icon set.</p>
+          </div>
+
+          <div class="decision-text" style="margin-top: 40px;">
+            <p>A mini design system. Tokens for colors, typography, spacing, border radius. Reusable components for buttons, cards, list items, form fields. Overkill for a two-person app, maybe &#8211; but I wanted iteration to be easy and consistent (plus it was fun).</p>
+          </div>
+          <div class="case-image-block">
+            <img class="case-img" src="../Images/Kaiswise images/mini_design_system.webp" alt="UI Kit">
+            <p class="case-caption">UI Kit.</p>
+          </div>
+
+          <div class="decision-text" style="margin-top: 40px;">
+            <p>Fredrik then rebuilt the app to match my Figma screens. The version we use today is the redesign.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINISHED PRODUCT -->
+    <section class="case-section" id="finished-product">
+      <hr class="section-divider">
+      <h2 class="case-h2">Finished product</h2>
+      <div class="case-body">
+        <p>After a few weeks of using Claude&#8217;s version and iterating on features, I redesigned the app to look like ours. Same features, similar flow (with a few tweaks) &#8211; just with the identity it was missing.</p>
+      </div>
+      <div class="solution-imgs">
+        <figure class="solution-figure">
+          <img class="solution-img" src="../Images/Kaiswise images/kaiswise_finished_product1.webp" alt="Homescreen: Claude vs new design">
+          <p class="case-caption">Homescreen. Claude vs. new design.</p>
+        </figure>
+        <figure class="solution-figure">
+          <img class="solution-img" src="../Images/Kaiswise images/kaiswise_finished_product2.webp" alt="Expense list: Claude vs new design">
+          <p class="case-caption">Expense list. Claude vs. new design.</p>
+        </figure>
+        <figure class="solution-figure">
+          <img class="solution-img" src="../Images/Kaiswise images/kaiswise_finished_product3.webp" alt="Settings: Claude vs new design">
+          <p class="case-caption">Settings. Claude vs. new design.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CLOSING THOUGHTS -->
+    <section class="case-section" id="closing-thoughts">
+      <hr class="section-divider">
+      <h2 class="case-h2">Closing thoughts</h2>
+      <div class="case-body">
+        <p>We&#8217;re at a strange, wonderful moment where couples and families can just build their own apps. A few years ago, an app like Kaiswise (better name still pending) would have needed a developer, a designer, weeks of coordinated work, and a hosting bill. Now it takes two people, an evening at the kitchen table, and a subscription to Claude.</p>
+        <p>I&#8217;m not going to pretend that&#8217;s the same as a &#8220;real&#8221; app. If I could snap my fingers, ours would connect directly to Swish, sync automatically, and have proper backups. But most of the time, we don&#8217;t need any of that. We need to know what one of us owes the other, and we need to be able to fix it. Our little homemade app solves that, and it looks like ours.</p>
+        <p>For a personal project between us, that&#8217;s enough.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CASE FOOTER -->
+  <footer class="case-footer">
+    <div class="case-footer-inner">
+      <p class="case-footer-label">Next Case</p>
+      <h2 class="case-footer-title">Designing a quarterly reports video pipeline for Sweden's biggest business publication</h2>
+      <div class="case-footer-buttons">
+        <a class="btn btn-outline" href="../index.html">Back to main page</a>
+        <a class="btn" href="bonnier.html">Read the next case</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
