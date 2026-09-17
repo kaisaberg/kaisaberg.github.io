@@ -13,6 +13,7 @@
   --dark-green:    #0a3323;
   --heading:       #2b3934;
   --body:          #55615d;
+  --caption:       #8F8F91;
   --cream:         #f7f4d5;
   --salmon:        #d3968c;
   --tag-bg:        rgba(131, 153, 88, 0.2);
@@ -968,7 +969,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: var(--body);
+  color: var(--caption);
   line-height: 1.4;
 }
 
