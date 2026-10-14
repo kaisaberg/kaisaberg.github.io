@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Video Editor — Kaisa</title>
+  <title>Interact — Kaisa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@600&family=Inter:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
-  <meta name="description" content="Product designer specialising in UX, design systems and creative solutions. I design the foundations that make good products possible.">
-  <meta property="og:title" content="Designing an interactive video editor for non-experts — Kaisa Berg">
-  <meta property="og:description" content="Product designer specialising in UX, design systems and creative solutions. I design the foundations that make good products possible.">
+  <meta name="description" content="How I designed Interact — a self-serve interactive video editor that let non-experts build interactive videos for the first time.">
+  <meta property="og:title" content="Interact: making interactive video feel familiar — Kaisa Berg">
+  <meta property="og:description" content="How I designed Interact — a self-serve interactive video editor that let non-experts build interactive videos for the first time.">
   <meta property="og:image" content="https://kaisaberg.github.io/og-image.png">
   <meta property="og:url" content="https://kaisaberg.github.io/work/interactive-editor.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="icon" type="image/png" href="../k_favicon.png">
-  <link rel="stylesheet" href="../style.css?v=14">
+  <link rel="stylesheet" href="../style.css?v=16">
 </head>
 <body>
 
@@ -31,15 +31,13 @@
 
   <!-- HERO -->
   <section class="case-hero">
-    <div class="case-hero-inner">
-      <div class="case-hero-text">
+    <div class="case-hero-stack-wrap">
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 800px;">
         <p class="case-label">Case Study</p>
-        <h1 class="case-title">Designing an interactive video editor for non-experts</h1>
-        <p class="case-subtitle">Node-based scenes, drag-and-drop widgets, and a visual timeline. Built for people who had never edited video.</p>
+        <h1 class="case-title">Interact: making interactive video feel familiar</h1>
+        <p class="case-subtitle">A self-serve interactive video editor, used to build hundreds of interactive videos across several industries.</p>
       </div>
-      <div class="case-hero-img-wrap">
-        <img class="case-hero-img" src="../Images/Interact images/interact_thumb.webp" alt="Interactive video editor">
-      </div>
+      <img class="case-img-full" src="../Images/Interact images/interact_thumb.webp" alt="Interact interactive video editor">
     </div>
   </section>
 
@@ -56,7 +54,7 @@
       </div>
       <div class="meta-block">
         <p class="meta-label">Timeline</p>
-        <p class="meta-value">2020–2021</p>
+        <p class="meta-value">2020&#8211;2023 (beta 2021)</p>
       </div>
       <div class="meta-block">
         <p class="meta-label">Output</p>
@@ -68,203 +66,224 @@
   <!-- TAB NAV -->
   <nav class="tab-nav">
     <div class="tab-group">
-      <a href="#at-a-glance">At a glance</a>
-      <a href="#context">Context</a>
-      <a href="#the-problem">The problem</a>
-      <a href="#decisions">Decisions</a>
-      <a href="#solution">Shipped solution</a>
-      <a href="#outcomes">What happened</a>
-      <a href="#learnings">Learnings</a>
+      <a href="#background">Background</a>
+      <a href="#guiding-principle">Guiding principle</a>
+      <a href="#design-decisions">Design decisions</a>
+      <a href="#what-we-left-out">What we left out</a>
+      <a href="#finished-product">Finished product</a>
+      <a href="#impact">Impact</a>
+      <a href="#what-i-learned">What I learned</a>
     </div>
   </nav>
 
   <!-- MAIN CONTENT -->
   <main class="case-main">
 
-    <!-- AT A GLANCE -->
-    <section class="case-section" id="at-a-glance">
-      <div class="callout-box">
-        <p class="callout-label">At a Glance</p>
-        <p class="callout-text">My company is a video platform for on-demand and live streaming. In 2020 we set out to build an interactive video editor that non-experts could use themselves, in a category that had only ever been built with specialists. I led the design of a self-serve editor with node-based scene connections, drag-and-drop widgets, a visual timeline for timing, and a device preview. The beta shipped in 2021. Five years later, hundreds of interactive videos have been built with it across industries like beauty, e-learning, real estate, banking, and retail.</p>
+    <!-- BACKGROUND -->
+    <section id="background" class="case-section-wide">
+      <div class="case-text">
+        <h2 class="case-h2">Background</h2>
+        <div class="case-body">
+          <p>In 2019, live shopping exploded. Inspired by influencer-led shopping streams in China, brands across Europe rushed into live video sales.</p>
+          <p>Our customers &#8211; banks, corporations and municipalities &#8211; weren&#8217;t fashion brands. And, according to our research, Swedish buyers don&#8217;t buy on impulse; they research and compare first. So instead of live shopping, we bet on on-demand interactive video: informational content viewers explore at their own pace. Product guides, courses, tours, and anything in between.</p>
+        </div>
       </div>
     </section>
 
-    <!-- CONTEXT -->
-    <section class="case-section" id="context">
-      <hr class="section-divider">
-      <h2 class="case-h2">Context</h2>
-      <div class="case-body">
-        <p>My company was a B2B SaaS video platform in a difficult market. YouTube and other free platforms dominated the general video landscape, which made differentiation hard for anyone in the paid B2B space. We needed a product that could be marketed on its own, that no one else was offering yet.</p>
-        <p>Interactive video was a possible answer. The category existed. There were videos with clickable regions, branching narratives, hotspots, and product overlays. But every interactive video on the market had been built by a production team or an agency. The tools that did exist for building them assumed professional users. That left a large group of potential customers priced out or intimidated out of the category.</p>
-        <p>The bet: build the first interactive video editor a non-expert could use themselves.</p>
-      </div>
-    </section>
-
-    <!-- THE PROBLEM -->
-    <section class="case-section" id="the-problem">
-      <hr class="section-divider">
-      <h2 class="case-h2">The problem</h2>
-      <div class="case-body">
-        <p>Interactive video is complex by nature. It combines video timing, canvas-based placement, action logic (what happens when a viewer clicks), state (which scene are you in), and playback across different devices. Existing editors reflected that complexity honestly, which is why they needed experts. Our job was to hide as much of it as possible without losing the capability.</p>
-        <p>Some of the specific problems in front of us:</p>
-        <p>How do we let someone connect a network of videos without having to teach them what branching narratives are? How do we let them add clickable elements (a button that opens a URL, a hotspot that shows a tooltip, an icon that jumps to another scene) without a lengthy explanation of every possibility? How do we make the whole thing work when it's embedded on customer websites, on both desktop and mobile, without them having to test it themselves?</p>
-        <p>There was also a broader positioning question. Interactive video is a very general capability. Someone could use it for a product guide, a course, a house tour, or a sales demo. We had to design something flexible enough to serve all of those, without being so abstract it stopped feeling useful.</p>
-      </div>
-      <div class="callout-box" style="margin-top: 48px;">
-        <p class="callout-label">What We Had to Work Around</p>
-        <ul class="bullet-list">
-          <li><span>A category most target customers had never used</span></li>
-          <li><span>Playback had to survive being embedded anywhere, on any device</span></li>
-          <li><span>A small team of five with a broad scope</span></li>
-          <li><span>A one-year beta deadline</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- DECISIONS -->
-    <section class="case-section" id="decisions">
-      <hr class="section-divider">
-      <h2 class="case-h2">Decisions</h2>
-      <div class="case-body decisions-intro">
-        <p>The trigger was strategic. My company sold a B2B video platform in a market where YouTube and other free players dominated the general audience. Differentiation was hard. We needed a product that could be marketed on its own, something that made someone pause and say "I haven't seen this before." Interactive video was the answer we landed on. A year after we shipped the beta, Vimeo announced they had bought an interactive video company to integrate into their platform. Same bet, one year later.</p>
-      </div>
-
-      <div class="decision-blocks">
-
-        <div class="decision-block">
-          <p class="decision-num">Decision 01</p>
-          <h3 class="decision-title">Node-based scene connections</h3>
-          <div>
-            <p class="decision-q-label">The Question</p>
-            <p class="decision-text">How do we let users organize the connections between videos in a way they can actually see?</p>
-          </div>
-          <div>
-            <p class="decision-a-label">What We Chose and Why</p>
-            <p class="decision-text">Interactive video branches like a family tree. One intro video leads to three possible follow-ups; each of those can lead to three more. Trying to represent that in a list or a folder would strip out the shape of the flow, which is the most important thing about interactive video in the first place.<br><br>So we chose a node-based canvas. Each video is a node. Connections between them show what plays after what. Node-based editors are a familiar pattern to anyone who's ever mapped a decision tree or a flow chart. Users didn't need to be taught the concept, because the pattern was already in their head. Once they saw their videos as nodes, they could place them out in a way that visually matched the story they wanted to tell.</p>
-          </div>
-          <div class="decision-img-wrap">
-            <img class="decision-img" src="../Images/Interact images/nodes.webp" alt="Node based editing">
-            <p class="case-caption">Node based editing.</p>
-          </div>
+    <!-- GUIDING PRINCIPLE -->
+    <section id="guiding-principle" class="case-section-wide">
+      <div class="case-text">
+        <hr class="section-divider">
+        <h2 class="case-h2">The guiding principle: Familiar</h2>
+        <div class="case-body">
+          <p>Our users had never made interactive video. But they had edited videos, retouched images, built PowerPoints and created websites using tools like Wordpress, Squarespace and Elementor. So instead of inventing a new interface for a new medium, I built Interact from the patterns they already knew.</p>
         </div>
 
-        <div class="decision-block">
-          <p class="decision-num">Decision 02</p>
-          <h3 class="decision-title">Widget types chosen from real use cases</h3>
-          <div>
-            <p class="decision-q-label">The Question</p>
-            <p class="decision-text">What kinds of widgets should users be able to add, and why these?</p>
-          </div>
-          <div>
-            <p class="decision-a-label">What We Chose and Why</p>
-            <p class="decision-text">We picked the initial widget set from user research based on what our users usually place in their videos in our classic video editing tool. They would add "lower thirds" (name cards), text headlines and descriptions, as well as images. To fulfill these needs, we added "Image" and "Text box".<br><br>"Icon" and "Shape" were added to add access to further detailed design.<br><br>"Button" was a unique widget for a video editor, but essential for the interactive format. The button is the best signal to video viewers that something can be clicked on.<br><br>Iframes came later, once we understood how much users wanted to build custom interactions we hadn't anticipated. Iframes turned "here are the things you can add" into "here is anything you can add," without breaking the rest of the interface.</p>
-          </div>
-          <div class="decision-img-wrap">
-            <img class="decision-img" src="../Images/Interact images/widgetlibrary.webp" alt="Widget library">
-            <p class="case-caption">Widget library.</p>
-          </div>
-        </div>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Pattern they recognized</th>
+              <th>Where it lives in Interact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Video Editing</td>
+              <td>The timeline, where every widget is a layer</td>
+            </tr>
+            <tr>
+              <td>Powerpoint / Flowcharts</td>
+              <td>The node view: scenes as boxes, connections as lines</td>
+            </tr>
+            <tr>
+              <td>Website builders</td>
+              <td>Drag-and-drop canvas and desktop/mobile preview</td>
+            </tr>
+            <tr>
+              <td>Image editors</td>
+              <td>In-video frame editing, layers and a settings panel for color, borders and opacity</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <div class="decision-block">
-          <p class="decision-num">Decision 03</p>
-          <h3 class="decision-title">A visual timeline for widget timing</h3>
-          <div>
-            <p class="decision-q-label">The Question</p>
-            <p class="decision-text">How do users control widget timing in each scene?</p>
-          </div>
-          <div>
-            <p class="decision-a-label">What We Chose and Why</p>
-            <p class="decision-text">Numeric input fields work. They also require the user to think in minutes, seconds and milliseconds, which is exactly the kind of friction that keeps non-experts out of video editing.<br><br>We chose a visual timeline that sits under the video. Every widget in the scene appears as a bar on the timeline, showing when it comes on and when it goes off. Users drag the ends of the bar to change timing. If a widget's bar ends after five seconds, the widget disappears after five seconds. No math, no input fields, no explanation.<br><br>We used the same timeline pattern we use in other products in our platform, which gave the whole thing an extra layer of familiarity for existing customers. Additional improvements to the timeline were later added, so users could "snap" layer endings to other layers on the timeline, making precision editing easier.</p>
-          </div>
-          <div class="decision-img-wrap">
-            <img class="decision-img" src="../Images/Interact images/timeline.webp" alt="Visual timeline for widget timing">
-          </div>
-        </div>
-
-        <div class="decision-block">
-          <p class="decision-num">Decision 04</p>
-          <h3 class="decision-title">A device switch for previewing on desktop and mobile</h3>
-          <div>
-            <p class="decision-q-label">The Question</p>
-            <p class="decision-text">How do we help users see how their interactive video will behave on the devices their audience will actually watch it on?</p>
-          </div>
-          <div>
-            <p class="decision-a-label">What We Chose and Why</p>
-            <p class="decision-text">Interactive videos live embedded on customer websites. Those websites are viewed on desktop and mobile. A button perfectly sized and positioned for desktop could appear too small on mobile. Users needed to see this before they published.<br><br>So we added a device switch above the video. Toggle between desktop and mobile, and the preview updates to match. Users could catch layout issues while they were still editing, not after their audience found them.</p>
-          </div>
-          <div class="decision-img-wrap">
-            <img class="decision-img" src="../Images/Interact images/responsive.webp" alt="Device switch for desktop and mobile preview">
-            <p class="case-caption">The device switch shows a preview of how the video will look on each device.</p>
-          </div>
-        </div>
-
-        <div class="decision-block">
-          <p class="decision-num">Decision 05</p>
-          <h3 class="decision-title">A custom lightbox for fullscreen playback</h3>
-          <div>
-            <p class="decision-q-label">The Question</p>
-            <p class="decision-text">How do we make sure interactive widgets survive when a viewer clicks fullscreen?</p>
-          </div>
-          <div>
-            <p class="decision-a-label">What We Chose and Why</p>
-            <p class="decision-text">We knew that our embedded player had a flaw when placed on customers' websites. When pressing Fullscreen on mobile, our player would be replaced by the browser's default video player. This would break our interactive features, as that was a unique feature in our video player.<br><br>So we built a fullscreen lightbox into our own player. When a viewer clicks fullscreen, the video expands within our controlled context instead of handing off to the browser. Widgets stay where they are. Interactivity survives.</p>
-          </div>
-          <div class="decision-img-wrap">
-            <img class="decision-img" src="../Images/Interact images/lightbox.webp" alt="Custom lightbox for fullscreen playback">
-          </div>
-        </div>
-
+        <blockquote class="pull-quote">
+          <p class="pull-quote-text">&#8220;You don&#8217;t know what you&#8217;re doing, let the professionals take over.&#8221;</p>
+          <p class="pull-quote-attr">&#8212; Christiane Kirkegaard Borup, Danish Agency for IT &amp; Learning, on the platforms they used before Qbrick and Interact</p>
+        </blockquote>
       </div>
     </section>
 
-    <!-- SOLUTION -->
-    <section class="case-section" id="solution">
-      <hr class="section-divider">
-      <h2 class="case-h2">The shipped solution</h2>
-      <div class="case-body">
-        <p>The beta shipped in 2021. Five years later, the editor is still actively developed.</p>
-        <p><strong>Scene organizer.</strong> A node-based canvas where users connect videos into flows. Each video is a node; connections show what plays after what. Users can arrange nodes to visualize the entire viewer path.</p>
-        <p><strong>Widget canvas.</strong> Inside any scene, users drop widgets onto the video: shapes, text, images, hotspots, icons, buttons, and iframes. Widgets are freely positioned and resized within the video frame.</p>
-        <p><strong>Widget editing.</strong> Selecting a widget opens a side panel with controls for visuals, content, timing, animations, and interactive actions (what happens on hover or click).</p>
-        <p><strong>Visual timeline.</strong> A bar for each widget shows when it appears and disappears in the video. Users drag the ends to change timing.</p>
-        <p><strong>Animations.</strong> Every widget can carry in, out, and loop animations, so interactive elements feel alive rather than static.</p>
-        <p><strong>Device preview.</strong> A switch above the video toggles between desktop and mobile so users can check layouts before publishing.</p>
-        <p><strong>Custom lightbox player.</strong> Fullscreen playback is contained inside our player, so widgets survive rather than getting stripped by the browser.</p>
-        <p><strong>Live streaming integration.</strong> The editor connects to my company's live streaming tool, so interactive scenes can appear in live streams. That path was designed for the live shopping category, which was cresting internationally at the time we built this.</p>
+    <!-- DESIGN DECISIONS -->
+    <section id="design-decisions" class="case-section-wide">
+      <div class="case-text">
+        <hr class="section-divider">
+        <h2 class="case-h2">Design decisions</h2>
       </div>
-      <div class="solution-imgs">
-        <figure class="solution-figure">
-          <img class="solution-img" src="../Images/Interact images/interact_result1.webp" alt="Node based editing on the overview level">
-          <p class="case-caption">Node based editing on the overview level.</p>
-        </figure>
-        <figure class="solution-figure">
-          <img class="solution-img" src="../Images/Interact images/interact_result2.webp" alt="Interactive video editor: Inside a scene">
-          <p class="case-caption">Interactive video editor: Inside a scene.</p>
-        </figure>
+
+      <!-- Decision 1 -->
+      <div class="decision-open">
+        <div class="case-text">
+          <h3 class="case-h3">Making interactive videos easy to build</h3>
+          <div class="case-body">
+            <p>Interactive video had always been something you hired an agency for. For Interact to work, a communicator or marketer had to be able to build one on their own &#8211; without a manual and without thinking about what goes on under the hood. To help with that, users need to be able to work with what they see.</p>
+          </div>
+          <p class="example-label">Example</p>
+          <p class="decision-solution-title">A drag-and-drop widget library</p>
+          <div class="case-body">
+            <p>Text, images, shapes, icons and buttons sit in a library next to the video. Drag one onto the video, and it&#8217;s there and ready to be adjusted from its default settings.</p>
+          </div>
+        </div>
+        <div class="badge-image-wrap">
+          <img class="case-img-full" src="../Images/Interact images/WF - Scene editor - widget library.png" alt="Wireframe: Widget library in scene editor">
+          <button class="img-badge" style="left: 18.3%; top: 14.9%;" data-tooltip="badge-1-1" aria-label="Badge 1">1</button>
+          <div class="badge-tooltip" id="badge-1-1">
+            <button class="badge-tooltip-close" aria-label="Close">&#215;</button>
+            <p>Widget cards that can be dragged into the video preview window.</p>
+          </div>
+        </div>
+        <p class="case-img-caption">Wireframe: Widget library in scene editor</p>
+      </div>
+
+      <!-- Decision 2 -->
+      <div class="decision-open">
+        <div class="case-text">
+          <h3 class="case-h3">An interactive video can&#8217;t exist in a linear space</h3>
+          <div class="case-body">
+            <p>A regular video runs from start to finish. An interactive video branches: one scene leads to three, each of those to three more. A timeline or a list can&#8217;t show that &#8211; and the shape of the story is exactly what creators need to see.</p>
+          </div>
+          <p class="example-label">Example</p>
+          <p class="decision-solution-title">The node view</p>
+          <div class="case-body">
+            <p>Every scene is a box, and every choice is a line to the next scene. The pattern is borrowed from tools our users already knew: slides in PowerPoint, boards in FigJam, and the user flows and task flows designers draw to map a journey. Creators see their whole story at a glance and can plan it the way they&#8217;d sketch it on a whiteboard.</p>
+          </div>
+        </div>
+        <div class="badge-image-wrap">
+          <img class="case-img-full" src="../Images/Interact images/WF - Scene overview.png" alt="Wireframe: Node view">
+          <button class="img-badge" style="left: 77.5%; top: 21.1%;" data-tooltip="badge-2-1" aria-label="Badge 2">2</button>
+          <div class="badge-tooltip" id="badge-2-1">
+            <button class="badge-tooltip-close" aria-label="Close">&#215;</button>
+            <p>Every scene is represented by a box that can be connected to other boxes. This can be done visually with lines or manually in the settings menu.</p>
+          </div>
+        </div>
+        <p class="case-img-caption">Wireframe: Node view</p>
+      </div>
+
+      <!-- Decision 3 -->
+      <div class="decision-open">
+        <div class="case-text">
+          <h3 class="case-h3">Interactivity brings UX thinking into the editor</h3>
+          <div class="case-body">
+            <p>The moment something in a video can be clicked, it stops being just graphics and becomes interface. Creators suddenly need to decide what a button does, and how it tells the viewer it can be clicked &#8211; questions that belong in web design, not video editing.</p>
+          </div>
+          <p class="example-label">Example</p>
+          <p class="decision-solution-title">Default and hover states</p>
+          <div class="case-body">
+            <p>Widgets have separate styling for their default and hover state, so a button can change colour when the viewer points at it &#8211; a basic signal that something is clickable. The pattern is borrowed from website builders like Elementor and Squarespace, where marketers were already used to them.</p>
+          </div>
+        </div>
+        <div class="badge-image-wrap">
+          <img class="case-img-full" src="../Images/Interact images/WF - Scene editor.png" alt="Wireframe: Default and hover states in scene editor">
+          <button class="img-badge" style="left: 24.7%; top: 57.5%;" data-tooltip="badge-3-1" aria-label="Badge 3">3</button>
+          <div class="badge-tooltip" id="badge-3-1">
+            <button class="badge-tooltip-close" aria-label="Close">&#215;</button>
+            <p>Different styling options for &#8220;Default&#8221; and &#8220;Hover&#8221;, just like states in a component kit.</p>
+          </div>
+        </div>
+        <p class="case-img-caption">Wireframe: Default and hover states in scene editor</p>
+      </div>
+
+      <!-- Decision 4 -->
+      <div class="decision-open">
+        <div class="case-text">
+          <h3 class="case-h3">An interactive video must work wherever it&#8217;s placed</h3>
+          <div class="case-body">
+            <p>Interactive videos live embedded on customers&#8217; websites, viewed on every kind of screen. If the interactivity breaks in one of those places, the whole video breaks with it.</p>
+          </div>
+          <p class="example-label">Example</p>
+          <p class="decision-solution-title">A fullscreen that keeps the interactivity</p>
+          <div class="case-body">
+            <p>On mobile, pressing fullscreen swapped our player for the browser&#8217;s own &#8211; and every interactive element disappeared. We built a custom lightbox that keeps fullscreen inside our player, so buttons and choices stay in place on every device.</p>
+          </div>
+        </div>
+        <img class="case-img-full case-img-narrow" src="../Images/Interact images/softbox_fullscreen.png" alt="Custom lightbox fullscreen keeping interactive elements in place">
+        <p class="case-img-caption">Custom lightbox fullscreen — interactive elements stay in place on every device.</p>
       </div>
     </section>
 
-    <!-- OUTCOMES -->
-    <section class="case-section" id="outcomes">
-      <hr class="section-divider">
-      <h2 class="case-h2">What happened after we shipped</h2>
-      <div class="case-body">
-        <p><strong>Adoption across industries.</strong> Hundreds of interactive videos have been built with the editor across use cases we anticipated and some we didn't: beauty and clothing product demos, furniture and real estate walkthroughs, influencer marketing, e-learning, banking product explainers, retail sales demos.</p>
-        <p><strong>The live shopping hypothesis proved right.</strong> Before we launched, we bet that live shopping wouldn't land in Sweden the way it had in China. That turned out to be accurate. Swedish buyers prefer to take their time researching, and live-only sales moments don't fit that pattern. Live shopping never took off here. The companies that bet entirely on it are down to a handful of customers today.</p>
-        <p><strong>The market pulled us toward informational content.</strong> On-demand shopping didn't take off either, which was less expected. Instead, the market moved toward informational content: product explainers, how-to guides, and brand stories with "learn more" paths built in. Interactive video became a way to extend the sales funnel through education, rather than a way to close a sale directly. That fits Swedish buying culture (take time, investigate, decide) and it's the use case we've grown into.</p>
-        <p><strong>Category validation.</strong> A year after we shipped the beta, Vimeo announced they had acquired an interactive video company to integrate into their platform. The same bet, made a year later.</p>
-        <p><strong>Continued development.</strong> Five years in, the editor is still shipping updates. That's the mark of a product that landed.</p>
+    <!-- WHAT WE LEFT OUT -->
+    <section id="what-we-left-out" class="case-section-wide">
+      <div class="case-text">
+        <hr class="section-divider">
+        <h2 class="case-h2">What we left out</h2>
+        <div class="case-body">
+          <p>We wanted separate layouts for desktop and mobile, so buttons could be larger and stacked vertically on small screens. It was too big of a project for a first version. Instead, we added a desktop/mobile switch &#8211; familiar from website builders &#8211; so creators could check both views while building and plan their layout accordingly.</p>
+        </div>
       </div>
     </section>
 
-    <!-- LEARNINGS -->
-    <section class="case-section" id="learnings">
-      <hr class="section-divider">
-      <h2 class="case-h2">Learnings</h2>
-      <div class="case-body">
-        <p><strong>Users don't know your tool's sweet spot until they exceed it.</strong> We designed the editor for interactive videos in the range of 20 to 40 scenes with a few options each. Most product demos, courses, and walkthroughs fit comfortably in that range. But some customers came in wanting to build 100+ scenes with 5+ interactive options per scene, ambition that used to require a production team. At that scale, the editor became sluggish and the experience shifted from empowering to frustrating. We ended up building many of those larger projects on customers' behalf. The takeaway isn't that we should have built a bigger, faster editor. It's that when you make a capability self-serve that used to require experts, non-experts arrive with more ambition than the tool was designed for. Marketing, demos, templates, and onboarding all need to communicate what the tool is optimised for. Otherwise you either build for the largest ambition users bring, or you end up building projects on their behalf.</p>
-        <p><strong>Familiar patterns work, even for unfamiliar problems.</strong> Node-based editors are a recognisable shape. Anyone who has mapped out a decision tree or a flow chart has seen one. Interactive video was, for most of our users, a new medium. But the moment they saw their videos as nodes with lines between them, the concept clicked. The pattern did most of the teaching. Novel capabilities don't need novel interfaces. Familiar interfaces are what make novel things feel approachable.</p>
-        <p><strong>Read the market you're in, not the market you're chasing.</strong> We built the editor while live shopping was cresting internationally. It was tempting to design the whole product around that use case, because that's where the noise was loudest. We took the softer bet: interactive video should serve on-demand first, live shopping second. Live shopping never took off in Sweden. Buyers here take their time, research before purchasing, and prefer to engage with information rather than being sold to in real time. That cultural read shaped which use cases we prioritised, and it's why the product is still around today while several live-shopping-only companies have folded or moved abroad. Hype tells you what's possible somewhere. It doesn't tell you what will work where you're actually selling.</p>
+    <!-- FINISHED PRODUCT -->
+    <section id="finished-product" class="case-section-wide">
+      <div class="case-text">
+        <hr class="section-divider">
+        <h2 class="case-h2">Finished product</h2>
+        <div class="case-body">
+          <p>In 2023, we released the full first version of Interact. Our customers now had access to a full editing platform where they could create interactive video courses, product demos, guided tours for desktop and mobile; embeddable anywhere.</p>
+        </div>
+      </div>
+      <img class="case-img-full" src="../Images/Interact images/Interact - New project.png" alt="Interact: new project screen">
+      <img class="case-img-full" src="../Images/Interact images/Interact - Scene editor - Button widget.png" alt="Interact: scene editor with button widget">
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact" class="case-section-wide">
+      <div class="case-text">
+        <hr class="section-divider">
+        <h2 class="case-h2">Impact</h2>
+        <div class="impact-blocks">
+          <div class="impact-block">
+            <p class="impact-lead">+44% sign-ups for Digidage</p>
+            <p class="impact-text">A national conference for Danish educators, after moving to an interactive event they designed and built themselves in Interact. The organiser named an easy-to-navigate platform as one of the key factors.</p>
+          </div>
+          <div class="impact-block">
+            <p class="impact-lead">Hundreds of interactive videos built</p>
+            <p class="impact-text">Across several industries, including e-learning, retail, real estate, banking, beauty and events. Some of our clients include: Workz, Digidage, Pieces, GE HealthCare, Jensen YH, Kekäle, VILA.</p>
+          </div>
+          <div class="impact-block">
+            <p class="impact-lead">Still in active development</p>
+            <p class="impact-text">Interact is still in use and in active development. The latest release included widget animations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I LEARNED -->
+    <section id="what-i-learned" class="case-section-wide" style="padding-bottom: 80px;">
+      <div class="case-text">
+        <hr class="section-divider">
+        <h2 class="case-h2">What I learned</h2>
+        <div class="case-body">
+          <p>Measuring value should be designed in from the start. We focused on making interactive video easy to build, but never defined how we&#8217;d measure if it worked. Designs for analytics for interactive video &#8211; which choices viewers made, what they clicked, where they dropped off &#8211; came much later. Until that is in place, neither we nor our customers can see the value the interactivity creates. Today, success metrics is one of the first arguments I bring up before any designs are planned.</p>
+        </div>
       </div>
     </section>
 
@@ -281,6 +300,70 @@
       </div>
     </div>
   </footer>
+
+<script>
+  document.querySelectorAll('.img-badge').forEach(function(badge) {
+    badge.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var tooltipId = this.dataset.tooltip;
+      var tooltip = document.getElementById(tooltipId);
+      var wrap = this.closest('.badge-image-wrap');
+
+      // Close any other open tooltips in this wrap
+      wrap.querySelectorAll('.badge-tooltip').forEach(function(t) {
+        if (t.id !== tooltipId) t.classList.remove('visible');
+      });
+      wrap.querySelectorAll('.img-badge').forEach(function(b) {
+        if (b !== badge) b.classList.remove('active');
+      });
+
+      var isVisible = tooltip.classList.contains('visible');
+      tooltip.classList.toggle('visible', !isVisible);
+      this.classList.toggle('active', !isVisible);
+
+      if (!isVisible) {
+        var wrapRect = wrap.getBoundingClientRect();
+        var badgeLeft = parseFloat(this.style.left) / 100 * wrapRect.width;
+        var badgeTop  = parseFloat(this.style.top)  / 100 * wrapRect.height;
+
+        var left = badgeLeft + 20;
+        var top  = badgeTop  + 20;
+
+        // Flip left if too close to right edge
+        if (left + 270 > wrapRect.width) {
+          left = badgeLeft - 280;
+        }
+        // Flip up if near bottom
+        if (top + 120 > wrapRect.height) {
+          top = badgeTop - 110;
+        }
+
+        tooltip.style.left = left + 'px';
+        tooltip.style.top  = top  + 'px';
+      }
+    });
+  });
+
+  document.querySelectorAll('.badge-tooltip-close').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var tooltip = this.closest('.badge-tooltip');
+      tooltip.classList.remove('visible');
+      tooltip.closest('.badge-image-wrap').querySelectorAll('.img-badge').forEach(function(b) {
+        b.classList.remove('active');
+      });
+    });
+  });
+
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.badge-tooltip').forEach(function(t) {
+      t.classList.remove('visible');
+    });
+    document.querySelectorAll('.img-badge').forEach(function(b) {
+      b.classList.remove('active');
+    });
+  });
+</script>
 
 </body>
 </html>

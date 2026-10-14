@@ -687,6 +687,22 @@ a {
   display: block;
 }
 
+/* Stacked hero variant (new case layout) */
+.case-hero-stack-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.case-hero-stack-wrap .case-img-full {
+  margin-top: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+
 /* ============================================================
    CASE STUDY: METADATA BAR
    ============================================================ */
@@ -740,12 +756,12 @@ a {
 }
 
 .tab-group {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   gap: 8px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .tab-group a {
@@ -1014,6 +1030,411 @@ a {
   display: block;
   box-shadow: 0 4px 2px rgba(0,0,0,0.08);
   object-fit: contain;
+}
+
+/* ============================================================
+   CASE STUDY: NEW WIDE LAYOUT (1100px / 800px system)
+   ============================================================ */
+
+.case-section-wide {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px 0;
+}
+
+.case-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.case-img-full {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  margin-top: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.case-img-narrow {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-img-caption {
+  max-width: 800px;
+  margin: 12px auto 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--caption);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.case-descriptor {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--salmon);
+  margin-bottom: 16px;
+}
+
+.case-h3 {
+  font-family: 'Asap Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--dark-green);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Open decision blocks (new — no border card) */
+.decision-open + .decision-open {
+  margin-top: 64px;
+  padding-top: 64px;
+  border-top: 1px dashed var(--salmon);
+}
+
+.example-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--salmon);
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.decision-solution-title {
+  font-family: 'Asap Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--dark-green);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+/* Comparison table */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 32px;
+}
+
+.compare-table th {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--heading);
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--salmon);
+}
+
+.compare-table td {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--body);
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(211, 150, 140, 0.35);
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.compare-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Pull quote */
+.pull-quote {
+  border-left: 3px solid var(--salmon);
+  padding: 8px 0 8px 24px;
+  margin-top: 48px;
+}
+
+.pull-quote-text {
+  font-family: 'Asap Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--dark-green);
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.pull-quote-attr {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--caption);
+  line-height: 1.5;
+}
+
+/* Badge image overlay */
+.badge-image-wrap {
+  position: relative;
+  margin-top: 40px;
+  line-height: 0;
+}
+
+.badge-image-wrap .case-img-full {
+  margin-top: 0;
+}
+
+.img-badge {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--salmon);
+  color: var(--white);
+  border: 2.5px solid var(--white);
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.img-badge:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.img-badge.active {
+  background: var(--dark-green);
+}
+
+.badge-tooltip {
+  position: absolute;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 14px 36px 14px 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  width: 260px;
+  z-index: 20;
+  display: none;
+  line-height: 1;
+}
+
+.badge-tooltip.visible {
+  display: block;
+}
+
+.badge-tooltip p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--body);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.badge-tooltip-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--caption);
+  line-height: 1;
+  padding: 2px 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+.badge-tooltip-close:hover {
+  color: var(--dark-green);
+}
+
+/* Impact blocks */
+.impact-blocks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.impact-block {
+  padding: 24px 0;
+}
+
+.impact-lead {
+  font-family: 'Asap Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--dark-green);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.impact-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--body);
+  line-height: 1.55;
+}
+
+.impact-text a {
+  color: var(--dark-green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ============================================================
+   CASE STUDY: SERVICE FLOW (numbered steps)
+   ============================================================ */
+
+.service-flow {
+  margin-top: 32px;
+}
+.service-flow-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px dashed var(--salmon);
+}
+.service-flow-item:first-child { border-top: 1px dashed var(--salmon); }
+.service-flow-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--salmon);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.service-flow-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: var(--body);
+  line-height: 1.45;
+}
+
+/* ============================================================
+   CASE STUDY: IMAGE PAIR (two side-by-side desktop images)
+   ============================================================ */
+
+.img-pair {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.img-pair-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-pair-item img {
+  max-width: 330px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.img-pair-item .case-img-caption {
+  margin-top: 10px;
+}
+
+/* ============================================================
+   CASE STUDY: FLOW DIAGRAM
+   ============================================================ */
+
+.flow-diagram {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 40px;
+  flex-wrap: nowrap;
+}
+
+.flow-box {
+  flex: 1;
+  border: 2px solid var(--dark-green);
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--dark-green);
+  line-height: 1.3;
+  background: var(--bg);
+}
+
+.flow-arrow {
+  flex-shrink: 0;
+  width: 48px;
+  text-align: center;
+  font-size: 22px;
+  color: var(--dark-green);
+  line-height: 1;
+}
+
+.flow-snake .flow-diagram {
+  margin-top: 0;
+}
+
+.flow-snake-connector {
+  position: relative;
+  height: 32px;
+  margin-bottom: 28px;
+  border-right: 2px solid var(--dark-green);
+  border-bottom: 2px solid var(--dark-green);
+  border-bottom-right-radius: 12px;
+}
+
+.flow-snake-connector::after {
+  content: '↓';
+  position: absolute;
+  left: -0.5em;
+  bottom: -1.6em;
+  color: var(--dark-green);
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* ============================================================
+   CASE STUDY: PHONE IMAGE PAIR / ROW (horizontal scroll on mobile)
+   ============================================================ */
+
+.phone-pair {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 40px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.phone-pair::-webkit-scrollbar { display: none; }
+.phone-pair img {
+  flex-shrink: 0;
+  height: 460px;
+  width: auto;
+  scroll-snap-align: start;
 }
 
 /* ============================================================
@@ -1424,5 +1845,110 @@ a {
 
   .case-title {
     font-size: 30px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — NEW WIDE LAYOUT
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .case-section-wide {
+    padding: 60px 20px 0;
+  }
+
+  .decision-open + .decision-open {
+    margin-top: 48px;
+    padding-top: 48px;
+  }
+
+  .compare-table th,
+  .compare-table td {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .case-h3 {
+    font-size: 24px;
+  }
+
+  .decision-solution-title {
+    font-size: 22px;
+  }
+
+  .pull-quote-text {
+    font-size: 22px;
+  }
+
+  .impact-lead {
+    font-size: 22px;
+  }
+
+  .flow-diagram {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+    width: auto;
+    text-align: center;
+  }
+
+  .flow-snake-connector {
+    height: auto;
+    margin: 0;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flow-snake-connector::after {
+    position: static;
+    display: block;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .badge-tooltip {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .img-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .compare-table th {
+    font-size: 12px;
+  }
+
+  .compare-table td {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+
+  .phone-pair {
+    justify-content: flex-start;
+    padding: 0 0 0 24px;
+  }
+
+  .phone-pair img {
+    height: auto;
+    width: 75vw;
+  }
+
+  .img-pair {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .img-pair-item img {
+    max-width: 100%;
   }
 }
